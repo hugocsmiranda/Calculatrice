@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<header></header>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calculatrice en JS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+        <link rel="stylesheet" href="calculatriceStyle.css">
+
+    </head>
+
+    <body onload="initElement();">
+        
+        <div>
+            <button onclick="disparaitre()" class="btCache">Faire apparaitre la Calculatrice</button>
+            <button onclick="apparaitre()" class="btCache">Faire disparaitre la Calculatrice</button>
+        </div>
+
+        <div class="decoration"></div>
+
+        <div id="id-visibilite">
+
+            <h1>LA CALCULATRICE EN JAVASCRIPT</h1>
+            
+            <div id="id-main">
+
+                <form method="GET" action="#"></form>
+
+                    <input type="text" name="valeur01" id="id-val1" placeholder="Valeur 1">
+
+                <select id="id-operation" name="operation">
+                    <option value="+"> + (Addition)</option>
+                    <option value="-"> - (Soustraction)</option>
+                    <option value="*"> * (Multiplication)</option>
+                    <option value="/"> / (Division)</option>
+                </select>
+
+                <input type="text" name="valeur02" id="id-val2" placeholder="Valeur 2">
+
+                <button onclick="mesOperations()">Calculer</button>
+
+                <div id="id-info" class="infodeco"></div>
+
+
+                <p>Resultat: <span id="id-resultat"></span></p>
+
+            </div>
+            <div class="decoration"></div>
+
+        </div>
+        <script src="calculatriceJS.js"></script>
+    </body>
+
+</html>
